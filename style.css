@@ -1,0 +1,47 @@
+body {
+    /* Set line height to 1.5 times the font size
+         and use the OS’s UI font as the website font
+       */
+    font: 100%/1.5 system-ui;
+    max-width: 80ch;
+    margin-inline: auto;
+    padding: 0 1rem;
+  }
+
+img {
+    max-width: 50%; /* Scale the image to fit within its container */
+    height: auto;    /* Maintain aspect ratio */
+    display: block;  /* Prevent inline spacing issues */
+    margin: 1rem 0; /* Center the image */
+}
+
+nav {
+  display: flex;
+  margin-bottom: 0.5rem;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: oklch(80% 3% 200);
+
+  ul {
+    display: contents
+  }
+
+  li {
+    display: contents
+  }
+  a {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  .current {
+    border-bottom-width: 0.4em;
+    border-bottom-style: inherit; /* Add border width, style, and color */
+    border-bottom-color: inherit;
+    padding-bottom: 0.3em;
+  }
+}
+
