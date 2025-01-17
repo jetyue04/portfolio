@@ -90,4 +90,82 @@ label {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   text-wrap: balance;
+  /* margin-bottom: 0.5rem; */
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0.5rem 0;
+
+  p {
+    margin-top: 0rem;
+  }
+}
+
+section header :not(#header) {
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid gray;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+section article {
+  p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    padding-left: 2rem; /* Adjust the value as needed */
+  }
+
+  h4 { 
+    padding-bottom: 0rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .left {
+    text-align: left;
+  }
+}
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.education {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
+}
+.left {
+  text-align: left;
+  padding-left: 0;
+}
+
+.right {
+  text-align: right;
+  padding-left: 0;
+}
+
+article h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem; /* Adjust this value to control the gap */
+}
+
+article p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin-top: 0.5rem; /* Adjust this to control the space between the list and previous content */
 }
