@@ -19,7 +19,7 @@ for (let p of pages) {
     let url = p.url;
     let title = p.title;
     const ARE_WE_HOME = document.documentElement.classList.contains('home');
-    
+
     if (!ARE_WE_HOME && !url.startsWith('http')) {
         url = '../' + url; 
     }
@@ -53,10 +53,6 @@ document.body.insertAdjacentHTML(
           </select>
       </label>`
   );
-
-// let localStorange = window.localStorage;
-
-
 const select =  document.querySelector('select');
 if ('colorScheme' in localStorage) {
     document.documentElement.style.setProperty('color-scheme', localStorage.colorScheme);
