@@ -29,12 +29,12 @@ for (let p of pages) {
     if (!ARE_WE_HOME && !url.startsWith('http')) {
         url = '../' + url; 
     }
-    // nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
+    nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
 
-    let a = document.createElement('a');
-    a.href = url;
-    a.textContent = title;
-    nav.append(a);
+    // let a = document.createElement('a');
+    // a.href = url;
+    // a.textContent = title;
+    // nav.append(a);
 
     if (a.host === location.host && a.pathname === location.pathname) {
         a.classList.add('current');
