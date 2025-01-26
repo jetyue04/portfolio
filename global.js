@@ -5,10 +5,10 @@ function $$(selector, context = document) {
 }
 
 let pages = [
-    { url: '/portfolio/', title: 'Home' },
-    { url: '/portfolio/projects/', title: 'Projects' },
-    { url: '/portfolio/contact/', title: 'Contact' },
-    { url: '/portfolio/resume/', title: 'Resume' },
+    { url: '', title: 'Home' },
+    { url: 'projects/', title: 'Projects' },
+    { url: 'contact/', title: 'Contact' },
+    { url: 'resume/', title: 'Resume' },
     { url: 'https://github.com/jetyue04', title: 'GitHub' }
   ];
 
@@ -20,9 +20,9 @@ for (let p of pages) {
     let title = p.title;
     const ARE_WE_HOME = document.documentElement.classList.contains('home');
 
-    if (!ARE_WE_HOME && !url.startsWith('http')) {
-        url = '../' + url; 
-    }
+    // if (!ARE_WE_HOME && !url.startsWith('http')) {
+    //     url = '../' + url; 
+    // }
 
     // nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
 
