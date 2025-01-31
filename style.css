@@ -19,7 +19,7 @@ body {
   }
 
 img {
-    max-width: 50%; /* Scale the image to fit within its container */
+    max-width: 80%; /* Scale the image to fit within its container */
     height: auto;    /* Maintain aspect ratio */
     display: block;  /* Prevent inline spacing issues */
     margin: 1rem 0; /* Center the image */
@@ -189,4 +189,27 @@ ul {
   font-size: 80%; /* Make the font slightly smaller */
   font-family: inherit; /* Inherit the font-family from the parent */
   display: inline-flex;
+}
+
+/* dl {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0.5rem;
+} */
+
+dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 10px; /* Space between items */
+  text-align: center; /* Align text */
+}
+
+dt {
+  grid-row: 1; /* Place all <dt> elements in the first row */
+  font-weight: bold;
+}
+
+dd {
+  grid-row: 2; /* Place all <dd> elements in the second row */
+  margin: 0; /* Remove default margin */
 }

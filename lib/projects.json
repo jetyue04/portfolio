@@ -1,0 +1,69 @@
+[
+    {
+        "title": "Power Outages: An Investigative Analysis",
+        "image": "https://i.ytimg.com/vi/eSmUwjGs738/maxresdefault.jpg",
+        "year": 2024,
+        "description": "Power outages are significant events, and can disrupt daily life, impact economic activities, and potentially pose risks to health and safety - especially ones on larger scales. We aim to answer the question of finding the characteristics of major power outages with high severity, and what risk factors an energy company might want to look into when predicting the location/severity of its next major power outage."
+    },
+    {
+        "title": "Neural Autoregressive flow for Data-driven background estimation",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "year": 2023,
+        "description": "Developed a ML method to estimate major background shape and distribution in particle physics data. The project utilises a DNN finds transformation from input distribution (MC simulation) to target distribution (actual data). This has been presented at the ML forum at Fermi National Accelerator Laboratory and CERN as well as the APS April conference 2024"
+    },
+    {
+        "title": "Consequuntur accusantium rem voluptate?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Nihil ullam a provident dolore veritatis similique quisquam, nam aspernatur nobis cupiditate eius modi delectus sint, qui voluptates, facere consectetur. Quidem illo quam minus enim vero beatae numquam, molestias animi!"
+    },
+    {
+        "title": "Excepturi optio ad sed.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Repudiandae vero necessitatibus architecto corrupti saepe expedita odit repellat minima! Est, incidunt? Est quidem minus, veniam cupiditate accusamus porro rem ipsa. Architecto, sint nemo. Ullam reprehenderit obcaecati corrupti suscipit facere!"
+    },
+    {
+        "title": "Eos aspernatur ratione consequatur.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Modi itaque voluptate, sequi quisquam harum ea voluptas corporis repellat quibusdam aut beatae adipisci ipsam ducimus aspernatur voluptatum! Perspiciatis totam asperiores atque sequi provident consequuntur beatae ut velit? Laudantium, eaque."
+    },
+    {
+        "title": "Sint totam voluptatem quia!",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Tempora iste veritatis praesentium explicabo voluptates maxime neque rerum ipsam quod soluta quam consequatur, molestias eum dolores quasi cum odio consectetur aspernatur consequuntur. Aliquam laborum, facere quae porro quis consequuntur."
+    },
+    {
+        "title": "Maiores cum porro fuga?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Vero odio corporis ut alias fuga labore repudiandae velit iste dolorum! Numquam nam neque fugiat eveniet, ipsam, vero maiores voluptas beatae, dolore dignissimos suscipit deleniti aperiam minima voluptatibus veniam nisi."
+    },
+    {
+        "title": "Autem nesciunt nobis rem.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Nam, mollitia vitae earum eum neque unde et vero rem iure a aperiam corporis! Non dolor, repellat earum ea, quia inventore placeat ullam modi delectus rem, maxime a debitis dignissimos?"
+    },
+    {
+        "title": "Voluptatum neque quos facere!",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Quaerat qui provident error veritatis enim labore soluta laudantium atque itaque cupiditate quod voluptates maxime ab sit ipsa, facere fugiat amet? Voluptatem, ipsum nemo reprehenderit commodi exercitationem sint explicabo. Pariatur?"
+    },
+    {
+        "title": "Consequatur mollitia aperiam vitae!",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Asperiores soluta natus iste recusandae ut, quidem laboriosam aliquam vel nihil voluptas corrupti eius facilis excepturi tempora aliquid maiores explicabo et pariatur dolor! Adipisci perferendis amet impedit. Facilis, quos ullam?"
+    },
+    {
+        "title": "Rerum tempora nisi aperiam!",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Tenetur saepe cupiditate quasi sint quod ipsa porro natus eius nemo nisi quaerat, alias sunt, rem maxime repudiandae dignissimos dicta id qui quo soluta. Consequatur saepe doloribus commodi animi impedit."
+    },
+    {
+        "title": "Ratione, a odio. Magnam?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Accusantium, ullam porro reprehenderit veritatis quibusdam iusto. Architecto aspernatur, unde quibusdam cumque earum at corporis accusantium minima deleniti animi ipsa eos molestiae dolorem recusandae doloremque id soluta, perferendis, quam laudantium."
+    },
+    {
+        "title": "Jet is cool",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Jet is cools"
+    }
+]
