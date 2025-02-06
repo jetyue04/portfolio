@@ -213,3 +213,89 @@ dd {
   grid-row: 2; /* Place all <dd> elements in the second row */
   margin: 0; /* Remove default margin */
 }
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  font-family: Baskerville, serif;
+}
+
+.project-year {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 4px;
+  font-variant-numeric: oldstyle-nums;
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+.legend {
+  list-style: none; /* Remove default bullets */
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7em, 1fr));
+  gap: 10px;
+  flex: 1;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* font-family: Baskerville, serif; */
+  padding: 5px;
+  margin: 0px;
+}
+
+.swatch {
+  width: 16px;
+  height: 16px;
+  aspect-ratio: 1 / 1; /* Ensures a perfect square */
+  background-color: var(--color);
+  display: inline-block;
+  /* border-radius: 50%; */
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.searchBar {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  font-size: 18px; /* Adjust the size as needed */
+  padding: 5px; /* Optional: adds spacing inside */
+  font-family: Baskerville, serif;
+}
+
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.selected {
+  --color: oklch(80% 0.20 150) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}

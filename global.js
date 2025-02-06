@@ -107,7 +107,7 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
 
     const projectsTitleElement = document.querySelector('.projects-title');
     if (projectsTitleElement) {
-        projectsTitleElement.innerText = `Projects: ${project.length}`;
+        projectsTitleElement.innerText = `${project.length} Projects`;
     }
 
     if (project.length === 0) {
@@ -123,7 +123,10 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
         article.innerHTML = `
           <${headingLevel}>${proj.title || 'Project Name'}</${headingLevel}>
           <img src="${proj.image || 'default-image.jpg'}" alt="${proj.title || 'Default Title'}">
-          <p>${proj.description || 'No description available'}</p>
+          <div class="project-details">
+                <p class="project-description">${proj.description || 'No description available'}</p>
+                <p class="project-year">${proj.year || 'Year not available'}</p>
+            </div>
         `;
         containerElement.appendChild(article);
       })
