@@ -6,17 +6,19 @@ function $$(selector, context = document) {
 
 let pages = [
 
-  // { url: '', title: 'Home' },
-  // { url: 'projects/', title: 'Projects' },
-  // { url: 'contact/', title: 'Contact' },
-  // { url: 'resume/', title: 'Resume' },
-  // { url: 'https://github.com/jetyue04', title: 'GitHub' }
+  { url: '', title: 'Home' },
+  { url: 'projects/', title: 'Projects' },
+  { url: 'contact/', title: 'Contact' },
+  { url: 'resume/', title: 'Resume' },
+  { url: 'meta/', title: 'Meta' },
+  { url: 'https://github.com/jetyue04', title: 'GitHub' }
   
-    { url: '/portfolio/', title: 'Home' },
-    { url: '/portfolio/projects/', title: 'Projects' },
-    { url: '/portfolio/contact/', title: 'Contact' },
-    { url: '/portfolio/resume/', title: 'Resume' },
-    { url: 'https://github.com/jetyue04', title: 'GitHub' }
+    // { url: '/portfolio/', title: 'Home' },
+    // { url: '/portfolio/projects/', title: 'Projects' },
+    // { url: '/portfolio/contact/', title: 'Contact' },
+    // { url: '/portfolio/resume/', title: 'Resume' },
+    // { url: '/portfolio/meta/', title: 'Meta' },
+    // { url: 'https://github.com/jetyue04', title: 'GitHub' }
   ];
 
 let nav = document.createElement('nav');
@@ -27,9 +29,9 @@ for (let p of pages) {
     let title = p.title;
     const ARE_WE_HOME = document.documentElement.classList.contains('home');
 
-    // if (!ARE_WE_HOME && !url.startsWith('http')) {
-    //     url = '../' + url; 
-    // }
+    if (!ARE_WE_HOME && !url.startsWith('http')) {
+        url = '../' + url; 
+    }
 
     let a = document.createElement('a');
     a.href = url;
