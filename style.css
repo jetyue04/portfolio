@@ -299,3 +299,99 @@ path {
     fill: var(--color);
   }
 }
+
+.gridlines line {
+  stroke: lightgray;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.gridlines path {
+  display: none; /* Hides the axis line */
+}
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;  /* Make two columns: one for <dt>, one for <dd> */
+  gap: 0.5em;  /* Space between dt and dd */
+  margin: 0;  /* Remove default margins */
+  padding: 0;  /* Remove default padding */
+}
+
+dl.info dt {
+  font-weight: normal;  /* Make labels less prominent */
+  color: #666;  /* Slightly darker gray for labels */
+}
+
+dl.info dd {
+  margin: 0;  /* Remove default margin on dd */
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;   /* Keep the tooltip 1em from the top of the viewport */
+  left: 1em;  /* Keep the tooltip 1em from the left side of the viewport */
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  display: none;  /* Hide by default */
+  pointer-events: none;  /* Avoid blocking other interactions */
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+/* Basic tooltip styling */
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation effect */
+  pointer-events: none; /* Prevent tooltip from blocking other interactions */
+  transition: opacity 0.2s ease-in-out; /* Smooth transition for fade-in/out */
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+/* Tooltip content styles */
+.tooltip dt {
+  font-weight: bold; /* Make the labels bolder */
+  margin-bottom: 5px; /* Add space between the label and value */
+}
+
+.tooltip dd {
+  margin: 0;
+  margin-bottom: 10px; /* Space between items */
+  color: #333; /* Darker text for content */
+}
+
+/* Optional: Frosted glass effect (optional but cool) */
+.tooltip {
+  backdrop-filter: blur(8px); /* Blur the background behind the tooltip */
+  -webkit-backdrop-filter: blur(8px); /* Ensure it works in Safari */
+}
+
+dl.info {
+  /* ... other styles ... */
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
